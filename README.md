@@ -32,13 +32,16 @@ in external files, etc. Another thing I would add is a unit testing framework. T
 already starting to build a new application in MVC to handle some of the issues I stated earlier. Maintaining this side
 project is fun and I enjoy helping out my friend.
 
+#Code Snippet
 https://github.com/matthewdwong/MLMS/blob/master/MLMS/User/Calendar.aspx This page I am particularly proud of. I leveraged
 an opensource javascript calendar called FullCalendar.js. I had to work with their apis as well as create several endpoints
 on the server to pass JSON data to fullcalendar. I would then manipulate the DOM based on the JSON data which I found 
 exciting.
 
+#My Profile
 My linkedin profile is https://www.linkedin.com/in/matthewdwong
 
+#Where it is hosted
 The application URL is http://kpayongayong.com/MLMS
 The username and password you can use is mattdavidwong@gmail.com; password:12345a
 You can also register and create a new account.
