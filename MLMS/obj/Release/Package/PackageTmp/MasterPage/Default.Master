@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="MLMS.MasterPage.Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Src="~/UserControls/LoginControl.ascx" TagName="LoginControl" TagPrefix="uc" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxtoolkit" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <%--<meta http-equiv=“X-UA-Compatible” content=“IE=8” /> --%>
+    <title></title>
+    <script type="text/javascript">
+        //var _gaq = _gaq || [];
+        //_gaq.push(['_setAccount', 'UA-4036206-5']);
+        //_gaq.push(['_setDomainName', '.narmscertifyu.com']);
+        //_gaq.push(['_trackPageview']);
+
+        //_gaq.push(['_setAccount', 'UA-4036206-8']);
+        //_gaq.push(['_setDomainName', '.bdsuniversity.com']);
+        //_gaq.push(['_trackPageview']);
+
+        //(function () {
+        //    var ga = document.createElement('script');
+        //    ga.type = 'text/javascript';
+        //    ga.async = true;
+        //    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        //    var s = document.getElementsByTagName('script')[0];
+        //    s.parentNode.insertBefore(ga, s);
+        //})()
+    </script>
+    <script type="text/javascript" src="../Scripts/Common.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-1.9.1.js"></script>
+</head>
+<body id="body">
+    <div style="display: none;" class="messageBox" id="messageBoxContainer">
+        <a style="position:absolute; top:-10px; right:-10px;" onclick="hideMessageBox();">
+            <img id="ctl00_ctl00_Image1" src="../App_Themes/bdsu/Images/close-button.png" style="float: right; width: 30px;" />
+        </a>
+        <div id="messageBox"></div>
+    </div>
+    <div id="loading" class="loading" style="display:none;">
+        <div class="spinner"></div>
+    </div>
+    <form id="frmBody" runat="server">
+        <div id="divDefaultContainer">
+            <div id="divDefaultHeader">
+                <div id="divDefaultHeaderRow1">
+                    <%--<div id="divDefaultHeaderLogo">
+                    <span>
+                        <asp:Image ID="imgLogo" runat="server" />
+                    </span>
+                </div>--%>
+                    <div id="divDefaultHeaderMenu">
+                        <table style="height: 71px;">
+                            <tr valign="bottom">
+                                <td style="padding-right: 5px">
+                                    <asp:LinkButton runat="server" ID="lnkName" CssClass="Header1MenuItemStyle" PostBackUrl="~/User/Leads.aspx" Enabled="false"></asp:LinkButton>
+                                </td>
+                                <td>
+                                    <asp:Menu ID="mnuHeader" runat="server" Orientation="Horizontal" PathSeparator="|" StaticDisplayLevels="1">
+                                        <Items>
+                                            <asp:MenuItem Text="Home" NavigateUrl="~/Default.aspx"></asp:MenuItem>
+                                        </Items>
+                                    </asp:Menu>
+
+                                </td>
+                                <td>
+                                    <asp:LoginStatus ID="LoginStatus1" runat="server"
+                                        LoginText=""
+                                        LogoutAction="Redirect"
+                                        LogoutPageUrl="~/Default.aspx"
+                                        LogoutText="Sign Out"
+                                        IsPostBack="False"
+                                        OnLoggedOut="LoginStatus1_LoggedOut" />
+                                    <asp:LinkButton ID="lnkLogin" runat="server" Text="Sign In" OnClientClick="return false;"></asp:LinkButton>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <asp:ScriptManager ID="ScriptManager1" runat="server">
+                        <Scripts>
+                            <%--<asp:ScriptReference Path="~/Scripts/jquery-ui-1.8.18.custom.min.js" />
+                            <asp:ScriptReference Path="~/Scripts/jquery.autocomplete.js" />
+                            <asp:ScriptReference Path="~/Scripts/jquery.datepick.js" />
+                            <asp:ScriptReference Path="~/Scripts/jquery.ui.core.js" />
+                            <asp:ScriptReference Path="~/Scripts/jquery.ui.widget.js" />
+                            <asp:ScriptReference Path="~/Scripts/jquery.ui.position.js" />
+                            <asp:ScriptReference Path="~/Scripts/jquery.ui.dialog.js" />
+                            <asp:ScriptReference Path="~/Scripts/jquery.dualListBox-1.2.min.js" />
+                            <asp:ScriptReference Path="~/Scripts/jquery.ui.mouse.js" />
+                            <asp:ScriptReference Path="~/Scripts/jquery.ui.draggable.js" />
+                            <asp:ScriptReference Path="~/Scripts/jquery.ui.resizable.js" />--%>
+                        </Scripts>
+                    </asp:ScriptManager>
+                    <ajaxtoolkit:PopupControlExtender
+                        ID="mpePopup" runat="server"
+                        TargetControlID="lnkLogin"
+                        PopupControlID="pnlLogin"
+                        Position="Bottom"
+                        BehaviorID="popUp"
+                        OffsetX="-280">
+                    </ajaxtoolkit:PopupControlExtender>
+                    <asp:Panel runat="server" CssClass="loginControl" ID="pnlLogin" Width="300px" Height="270px" Style="display: none; z-index: 1;">
+                        <asp:Label runat="server" CssClass="divDefaultHeader" ID="lblHeader" Text="Sign In"></asp:Label>
+                        <br />
+                        <br />
+                        <uc:LoginControl runat="server" ID="ucLogin"></uc:LoginControl>
+                    </asp:Panel>
+                </div>
+                <div id="divDefaultHeaderRow2">
+                    <asp:Menu ID="mnuMain" runat="server" Orientation="Horizontal"
+                        CssClass="Header2Menu" Visible="false"
+                        PathSeparator="|"
+                        StaticDisplayLevels="1"
+                        StaticSubMenuIndent="0"
+                        StaticEnableDefaultPopOutImage="false"
+                        DynamicHorizontalOffset="10"
+                        DynamicVerticalOffset="5">
+                        <StaticMenuStyle CssClass="Header2MenuStyle" VerticalPadding="0" HorizontalPadding="0" />
+                        <StaticMenuItemStyle CssClass="Header2MenuItemStyle" ItemSpacing="0" HorizontalPadding="0" VerticalPadding="0" />
+                        <StaticHoverStyle CssClass="Header2MenuHover" />
+                        <DynamicMenuStyle CssClass="Header2SubMenuStyle" />
+                        <DynamicMenuItemStyle CssClass="Header2SubMenuItemStyle" />
+                        <DynamicHoverStyle CssClass="Header2SubMenuHover" />
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/User/Calendar.aspx" Text="Calendar"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/User/Leads.aspx" Text="Leads" Selected="true"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/User/Search.aspx?MemberType=3" Text="Customers"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/User/Search.aspx?MemberType=2" Text="Members"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/User/Admin.aspx" Text="Custom Settings"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </div>
+            </div>
+            <div id="divDefaultBody">
+                <asp:ContentPlaceHolder ID="cphBody" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="divDefaultFooter">
+                <table width="100%">
+                    <tr>
+                        <td align="left" style="padding-left: 15px;" valign="middle">Copyright &copy; <%=DateTime.Today.Year %> Archon
+                        </td>
+                        <td align="right" style="padding-left: 15px; padding-top: 5px; padding-bottom: 5px">
+                            <asp:HyperLink ID="lnkTwitterIcon" SkinID="twitterIcon" runat="server"></asp:HyperLink>
+                            &nbsp;
+                        <asp:HyperLink ID="lnkFacebookIcon" SkinID="facebookIcon" runat="server"></asp:HyperLink>
+                            &nbsp;
+                        <asp:HyperLink ID="lnkLinkedInIcon" SkinID="linkedInIcon" runat="server"></asp:HyperLink>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

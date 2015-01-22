@@ -1,0 +1,5 @@
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Objects\bin\Release\MLMS.Objects.dll
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Objects\bin\Release\MLMS.Objects.pdb
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Objects\obj\Release\MLMS.Objects.csprojResolveAssemblyReference.cache
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Objects\obj\Release\MLMS.Objects.dll
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Objects\obj\Release\MLMS.Objects.pdb

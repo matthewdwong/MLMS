@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B17105E7-2235-4D2A-9F29-8A1AD5785AAB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MLMS</RootNamespace>
+    <AssemblyName>MLMS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <SccProjectName>%24/MLMS/MLMS</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>https://archonllc.visualstudio.com/defaultcollection</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\LMS2.3\BDS.LMS.Web\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\..\LMS2.3\BDS.LMS.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\..\LMS2.3\BDS.LMS.Data\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\bdsu\flora.datepick.css" />
+    <Content Include="App_Themes\bdsu\fullcalendar.css" />
+    <Content Include="App_Themes\bdsu\fullcalendar.print.css" />
+    <Content Include="App_Themes\bdsu\Images\bkgd.jpg" />
+    <Content Include="App_Themes\bdsu\Images\book.gif" />
+    <Content Include="App_Themes\bdsu\Images\book2.gif" />
+    <Content Include="App_Themes\bdsu\Images\certificate.gif" />
+    <Content Include="App_Themes\bdsu\Images\certificate_background.jpg" />
+    <Content Include="App_Themes\bdsu\Images\close-button.png" />
+    <Content Include="App_Themes\bdsu\Images\CornerLarge.gif" />
+    <Content Include="App_Themes\bdsu\Images\CornerLargeBlue.gif" />
+    <Content Include="App_Themes\bdsu\Images\CornerSmall.gif" />
+    <Content Include="App_Themes\bdsu\Images\d.png" />
+    <Content Include="App_Themes\bdsu\Images\delete.gif" />
+    <Content Include="App_Themes\bdsu\Images\demobutton.jpg" />
+    <Content Include="App_Themes\bdsu\Images\e.png" />
+    <Content Include="App_Themes\bdsu\Images\f.png" />
+    <Content Include="App_Themes\bdsu\Images\facebook.png" />
+    <Content Include="App_Themes\bdsu\Images\homeimage.jpg" />
+    <Content Include="App_Themes\bdsu\Images\How_it_Works.jpg" />
+    <Content Include="App_Themes\bdsu\Images\linkedin.png" />
+    <Content Include="App_Themes\bdsu\Images\logo.jpg" />
+    <Content Include="App_Themes\bdsu\Images\m.png" />
+    <Content Include="App_Themes\bdsu\Images\ms.png" />
+    <Content Include="App_Themes\bdsu\Images\NARMScertifyU-Final.jpg" />
+    <Content Include="App_Themes\bdsu\Images\NARMScertifyU-Final.png" />
+    <Content Include="App_Themes\bdsu\Images\NARMScertifyU-Final3.png" />
+    <Content Include="App_Themes\bdsu\Images\NARMScertifyU-PayPal.gif" />
+    <Content Include="App_Themes\bdsu\Images\NARMScertifyU_logo.jpg" />
+    <Content Include="App_Themes\bdsu\Images\only15percourse.jpg" />
+    <Content Include="App_Themes\bdsu\Images\only_15_per_course.jpg" />
+    <Content Include="App_Themes\bdsu\Images\pagination.png" />
+    <Content Include="App_Themes\bdsu\Images\powered by bdsmktg tag.jpg" />
+    <Content Include="App_Themes\bdsu\Images\poweredbybdsmktgtag.jpg" />
+    <Content Include="App_Themes\bdsu\Images\r.png" />
+    <Content Include="App_Themes\bdsu\Images\spinner.GIF" />
+    <Content Include="App_Themes\bdsu\Images\stackedBooks.jpg" />
+    <Content Include="App_Themes\bdsu\Images\tl.png" />
+    <Content Include="App_Themes\bdsu\Images\tt.png" />
+    <Content Include="App_Themes\bdsu\Images\twitter.png" />
+    <Content Include="App_Themes\bdsu\itcfranklingothicstd-book-webfont.svg" />
+    <Content Include="App_Themes\bdsu\itcfranklingothicstd-demi-webfont.svg" />
+    <Content Include="App_Themes\bdsu\jquery-ui-1.10.3.custom.css" />
+    <Content Include="App_Themes\bdsu\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="App_Themes\bdsu\jquery-ui-1.8.11.custom.css" />
+    <Content Include="App_Themes\bdsu\jquery-ui-1.8.18.custom.css" />
+    <Content Include="App_Themes\bdsu\jquery.autocomplete.css" />
+    <Content Include="App_Themes\bdsu\jquery.datepick.css" />
+    <Content Include="App_Themes\bdsu\jquery.ui.base.css" />
+    <Content Include="App_Themes\bdsu\jquery.ui.core.css" />
+    <Content Include="App_Themes\bdsu\jquery.ui.dialog.css" />
+    <Content Include="App_Themes\bdsu\jquery.ui.theme.css" />
+    <Content Include="App_Themes\bdsu\jquery.weekcalendar.css" />
+    <Content Include="App_Themes\bdsu\Main.css" />
+    <Content Include="App_Themes\bdsu\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\bdsu\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="App_Themes\bdsu\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="App_Themes\bdsu\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="App_Themes\bdsu\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="App_Themes\bdsu\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="App_Themes\bdsu\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="App_Themes\bdsu\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="App_Themes\bdsu\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="App_Themes\bdsu\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="App_Themes\bdsu\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="App_Themes\bdsu\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="App_Themes\bdsu\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\bdsu\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="App_Themes\bdsu\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="App_Themes\bdsu\redmond\jquery-ui-1.8.16.custom.css" />
+    <Content Include="App_Themes\Default\flora.datepick.css" />
+    <Content Include="App_Themes\Default\humanity.datepick.css" />
+    <Content Include="App_Themes\Default\Images\bkgd.jpg" />
+    <Content Include="App_Themes\Default\Images\book.gif" />
+    <Content Include="App_Themes\Default\Images\book2.gif" />
+    <Content Include="App_Themes\Default\Images\certificate.gif" />
+    <Content Include="App_Themes\Default\Images\CornerLarge.gif" />
+    <Content Include="App_Themes\Default\Images\CornerLargeBlue.gif" />
+    <Content Include="App_Themes\Default\Images\CornerSmall.gif" />
+    <Content Include="App_Themes\Default\Images\d.png" />
+    <Content Include="App_Themes\Default\Images\demobutton.jpg" />
+    <Content Include="App_Themes\Default\Images\e.png" />
+    <Content Include="App_Themes\Default\Images\f.png" />
+    <Content Include="App_Themes\Default\Images\facebook.jpg" />
+    <Content Include="App_Themes\Default\Images\facebook.png" />
+    <Content Include="App_Themes\Default\Images\googleplus.jpg" />
+    <Content Include="App_Themes\Default\Images\homeimage.jpg" />
+    <Content Include="App_Themes\Default\Images\How_it_Works.jpg" />
+    <Content Include="App_Themes\Default\Images\linkedin.jpg" />
+    <Content Include="App_Themes\Default\Images\linkedin.png" />
+    <Content Include="App_Themes\Default\Images\logo.jpg" />
+    <Content Include="App_Themes\Default\Images\m.png" />
+    <Content Include="App_Themes\Default\Images\minus.png" />
+    <Content Include="App_Themes\Default\Images\ms.png" />
+    <Content Include="App_Themes\Default\Images\NARMScertifyU-Final.jpg" />
+    <Content Include="App_Themes\Default\Images\NARMScertifyU-Final.png" />
+    <Content Include="App_Themes\Default\Images\NARMScertifyU-Final3.png" />
+    <Content Include="App_Themes\Default\Images\NARMScertifyU-PayPal.gif" />
+    <Content Include="App_Themes\Default\Images\NARMScertifyU_logo.jpg" />
+    <Content Include="App_Themes\Default\Images\only15percourse.jpg" />
+    <Content Include="App_Themes\Default\Images\only_15_per_course.jpg" />
+    <Content Include="App_Themes\Default\Images\pagination.png" />
+    <Content Include="App_Themes\Default\Images\plus.png" />
+    <Content Include="App_Themes\Default\Images\powered by bdsmktg tag.jpg" />
+    <Content Include="App_Themes\Default\Images\poweredbybdsmktgtag.jpg" />
+    <Content Include="App_Themes\Default\Images\poweredbybdsmktgtag.png" />
+    <Content Include="App_Themes\Default\Images\r.png" />
+    <Content Include="App_Themes\Default\Images\spacer.gif" />
+    <Content Include="App_Themes\Default\Images\stackedBooks.jpg" />
+    <Content Include="App_Themes\Default\Images\tl.png" />
+    <Content Include="App_Themes\Default\Images\tt.png" />
+    <Content Include="App_Themes\Default\Images\twitter.jpg" />
+    <Content Include="App_Themes\Default\Images\twitter.png" />
+    <Content Include="App_Themes\Default\jquery-ui-1.8.18.custom.css" />
+    <Content Include="App_Themes\Default\jquery.autocomplete.css" />
+    <Content Include="App_Themes\Default\jquery.datepick.css" />
+    <Content Include="App_Themes\Default\jquery.ui.base.css" />
+    <Content Include="App_Themes\Default\jquery.ui.core.css" />
+    <Content Include="App_Themes\Default\jquery.ui.dialog.css" />
+    <Content Include="App_Themes\Default\jquery.ui.theme.css" />
+    <Content Include="App_Themes\Default\Main.css" />
+    <Content Include="App_Themes\NCU\Images\bkgd.jpg" />
+    <Content Include="App_Themes\NCU\Images\book.gif" />
+    <Content Include="App_Themes\NCU\Images\book2.gif" />
+    <Content Include="App_Themes\NCU\Images\certificate.gif" />
+    <Content Include="App_Themes\NCU\Images\CornerLarge.gif" />
+    <Content Include="App_Themes\NCU\Images\CornerLargeBlue.gif" />
+    <Content Include="App_Themes\NCU\Images\CornerSmall.gif" />
+    <Content Include="App_Themes\NCU\Images\d.png" />
+    <Content Include="App_Themes\NCU\Images\delete.gif" />
+    <Content Include="App_Themes\NCU\Images\demobutton.jpg" />
+    <Content Include="App_Themes\NCU\Images\e.png" />
+    <Content Include="App_Themes\NCU\Images\f.png" />
+    <Content Include="App_Themes\NCU\Images\facebook.jpg" />
+    <Content Include="App_Themes\NCU\Images\Hero-Image2.jpg" />
+    <Content Include="App_Themes\NCU\Images\homeimage.jpg" />
+    <Content Include="App_Themes\NCU\Images\How_it_Works.jpg" />
+    <Content Include="App_Themes\NCU\Images\learn.jpg" />
+    <Content Include="App_Themes\NCU\Images\linkedin.jpg" />
+    <Content Include="App_Themes\NCU\Images\logo.jpg" />
+    <Content Include="App_Themes\NCU\Images\m.png" />
+    <Content Include="App_Themes\NCU\Images\minus.png" />
+    <Content Include="App_Themes\NCU\Images\ms.png" />
+    <Content Include="App_Themes\NCU\Images\NARMScertifyU-Final.jpg" />
+    <Content Include="App_Themes\NCU\Images\NARMScertifyU-Final.png" />
+    <Content Include="App_Themes\NCU\Images\NARMScertifyU-Final3.png" />
+    <Content Include="App_Themes\NCU\Images\NARMScertifyU-PayPal.gif" />
+    <Content Include="App_Themes\NCU\Images\NARMScertifyUCompanies.swf" />
+    <Content Include="App_Themes\NCU\Images\NARMScertifyU_logo.jpg" />
+    <Content Include="App_Themes\NCU\Images\only15percourse.jpg" />
+    <Content Include="App_Themes\NCU\Images\only_15_per_course.jpg" />
+    <Content Include="App_Themes\NCU\Images\pagination.png" />
+    <Content Include="App_Themes\NCU\Images\plus.png" />
+    <Content Include="App_Themes\NCU\Images\powered by bdsmktg tag.jpg" />
+    <Content Include="App_Themes\NCU\Images\poweredbybdsmktgtag.jpg" />
+    <Content Include="App_Themes\NCU\Images\r.png" />
+    <Content Include="App_Themes\NCU\Images\stackedBooks.jpg" />
+    <Content Include="App_Themes\NCU\Images\tl.png" />
+    <Content Include="App_Themes\NCU\Images\tt.png" />
+    <Content Include="App_Themes\NCU\Images\twitter.jpg" />
+    <Content Include="App_Themes\NCU\Images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\NCU\Images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="App_Themes\NCU\Images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="App_Themes\NCU\Images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="App_Themes\NCU\Images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="App_Themes\NCU\Images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="App_Themes\NCU\Images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="App_Themes\NCU\Images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="App_Themes\NCU\Images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\NCU\Images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="App_Themes\NCU\Images\ui-icons_454545_256x240.png" />
+    <Content Include="App_Themes\NCU\Images\ui-icons_888888_256x240.png" />
+    <Content Include="App_Themes\NCU\Images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\NCU\jquery-ui-1.8.18.custom.css" />
+    <Content Include="App_Themes\NCU\jquery.autocomplete.css" />
+    <Content Include="App_Themes\NCU\jquery.datepick.css" />
+    <Content Include="App_Themes\NCU\jquery.ui.all.css" />
+    <Content Include="App_Themes\NCU\jquery.ui.base.css" />
+    <Content Include="App_Themes\NCU\jquery.ui.core.css" />
+    <Content Include="App_Themes\NCU\jquery.ui.dialog.css" />
+    <Content Include="App_Themes\NCU\jquery.ui.theme.css" />
+    <Content Include="App_Themes\NCU\Main.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Public\PasswordRecovery.aspx" />
+    <Content Include="Public\Register.aspx" />
+    <Content Include="Scripts\Common.js" />
+    <Content Include="Scripts\date.js" />
+    <Content Include="Scripts\DateTimePicker.js" />
+    <Content Include="Scripts\fullcalendar.js" />
+    <Content Include="Scripts\fullcalendar.min.js" />
+    <Content Include="Scripts\fullcalendar.viewmore.js" />
+    <Content Include="Scripts\gcal.js" />
+    <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.2.custom.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.3.custom.js" />
+    <Content Include="Scripts\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.custom.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.18.custom.min.js" />
+    <Content Include="Scripts\jquery-ui.custom.js" />
+    <Content Include="Scripts\jquery.autocomplete.js" />
+    <Content Include="Scripts\jquery.datepick.js" />
+    <Content Include="Scripts\jquery.formbubble.js" />
+    <Content Include="Scripts\jquery.jqpagination.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.ui.autocomplete.js" />
+    <Content Include="Scripts\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery.ui.dialog.js" />
+    <Content Include="Scripts\jquery.ui.draggable.js" />
+    <Content Include="Scripts\jquery.ui.menu.js" />
+    <Content Include="Scripts\jquery.ui.mouse.js" />
+    <Content Include="Scripts\jquery.ui.position.js" />
+    <Content Include="Scripts\jquery.ui.resizable.js" />
+    <Content Include="Scripts\jquery.ui.tabs.js" />
+    <Content Include="Scripts\jquery.ui.widget.js" />
+    <Content Include="Services\CalendarWebService.asmx" />
+    <Content Include="Services\MemberWebService.asmx" />
+    <Content Include="Services\UserService.asmx" />
+    <Content Include="UserControls\CallHistory.ascx" />
+    <Content Include="UserControls\LeadManagement.ascx" />
+    <Content Include="UserControls\LoginControl.ascx" />
+    <Content Include="UserControls\UserControlBase.ascx" />
+    <Content Include="User\Admin.aspx" />
+    <Content Include="User\Calendar.aspx" />
+    <Content Include="User\EditProfile.aspx" />
+    <Content Include="User\Leads.aspx" />
+    <Content Include="User\Members.aspx" />
+    <Content Include="User\Search.aspx" />
+    <Content Include="User\UserWebService.asmx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\TemplateDefault.Master.cs">
+      <DependentUpon>TemplateDefault.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\TemplateDefault.Master.designer.cs">
+      <DependentUpon>TemplateDefault.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public\PasswordRecovery.aspx.cs">
+      <DependentUpon>PasswordRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\PasswordRecovery.aspx.designer.cs">
+      <DependentUpon>PasswordRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\CalendarWebService.asmx.cs">
+      <DependentUpon>CalendarWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\MemberWebService.asmx.cs">
+      <DependentUpon>MemberWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\UserService.asmx.cs">
+      <DependentUpon>UserService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\CallHistory.ascx.cs">
+      <DependentUpon>CallHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CallHistory.ascx.designer.cs">
+      <DependentUpon>CallHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LeadManagement.ascx.cs">
+      <DependentUpon>LeadManagement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\LeadManagement.ascx.designer.cs">
+      <DependentUpon>LeadManagement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LoginControl.ascx.cs">
+      <DependentUpon>LoginControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\LoginControl.ascx.designer.cs">
+      <DependentUpon>LoginControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlBase.ascx.cs">
+      <DependentUpon>UserControlBase.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlBase.ascx.designer.cs">
+      <DependentUpon>UserControlBase.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Calendar.aspx.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Calendar.aspx.designer.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\CalendarHandler.ashx.cs">
+      <DependentUpon>CalendarHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="User\EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Leads.aspx.cs">
+      <DependentUpon>Leads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Leads.aspx.designer.cs">
+      <DependentUpon>Leads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\MemberFilterHandler.ashx.cs">
+      <DependentUpon>MemberFilterHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="User\LeadSearchHandler.ashx.cs">
+      <DependentUpon>LeadSearchHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Members.aspx.cs">
+      <DependentUpon>Members.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Members.aspx.designer.cs">
+      <DependentUpon>Members.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserWebService.asmx.cs">
+      <DependentUpon>UserWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\bdsu\Default.skin" />
+    <Content Include="App_Themes\bdsu\itcfranklingothicstd-book-webfont.eot" />
+    <Content Include="App_Themes\bdsu\itcfranklingothicstd-book-webfont.ttf" />
+    <Content Include="App_Themes\bdsu\itcfranklingothicstd-book-webfont.woff" />
+    <Content Include="App_Themes\bdsu\itcfranklingothicstd-demi-webfont.eot" />
+    <Content Include="App_Themes\bdsu\itcfranklingothicstd-demi-webfont.ttf" />
+    <Content Include="App_Themes\bdsu\itcfranklingothicstd-demi-webfont.woff" />
+    <Content Include="App_Themes\Default\Default.skin" />
+    <Content Include="App_Themes\NCU\Default.skin" />
+    <Content Include="MasterPage\Default.Master" />
+    <Content Include="MasterPage\TemplateDefault.Master" />
+    <Content Include="User\CalendarHandler.ashx" />
+    <Content Include="User\MemberFilterHandler.ashx" />
+    <Content Include="User\LeadSearchHandler.ashx" />
+    <None Include="Properties\PublishProfiles\MLMS.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MLMS.Common\MLMS.Common.csproj">
+      <Project>{1b2a90ef-5f70-4395-b028-2390438e8e54}</Project>
+      <Name>MLMS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MLMS.Data\MLMS.Data.csproj">
+      <Project>{783ae2f3-e564-42e5-b68a-5887f1eeac2e}</Project>
+      <Name>MLMS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MLMS.Objects\MLMS.Objects.csproj">
+      <Project>{19eabff0-9aea-4664-a421-3e6c738c9215}</Project>
+      <Name>MLMS.Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MLMS.Service\MLMS.Service.csproj">
+      <Project>{749c4832-3ac7-4d2d-bbfd-42c9fd271bb5}</Project>
+      <Name>MLMS.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58798</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58798/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

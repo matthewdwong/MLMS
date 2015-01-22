@@ -1,0 +1,797 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Themes/bdsu/Default.skin">
+      <publishTime>12/21/2012 13:58:53</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/flora.datepick.css">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/fullcalendar.css">
+      <publishTime>05/19/2013 23:59:48</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/fullcalendar.print.css">
+      <publishTime>05/28/2013 20:55:16</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/bkgd.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/book.gif">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/book2.gif">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/certificate.gif">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/certificate_background.jpg">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/close-button.png">
+      <publishTime>02/17/2014 22:47:23</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/CornerLarge.gif">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/CornerLargeBlue.gif">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/CornerSmall.gif">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/d.png">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/delete.gif">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/demobutton.jpg">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/e.png">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/f.png">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/facebook.png">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/homeimage.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/How_it_Works.jpg">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/linkedin.png">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/logo.jpg">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/m.png">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/ms.png">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/NARMScertifyU-Final.jpg">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/NARMScertifyU-Final.png">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/NARMScertifyU-Final3.png">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/NARMScertifyU-PayPal.gif">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/NARMScertifyU_logo.jpg">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/only15percourse.jpg">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/only_15_per_course.jpg">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/pagination.png">
+      <publishTime>06/01/2011 22:43:46</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/powered by bdsmktg tag.jpg">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/poweredbybdsmktgtag.jpg">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/r.png">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/spinner.GIF">
+      <publishTime>10/30/2013 23:57:32</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/stackedBooks.jpg">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/tl.png">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/tt.png">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Images/twitter.png">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/itcfranklingothicstd-book-webfont.eot">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/itcfranklingothicstd-book-webfont.svg">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/itcfranklingothicstd-book-webfont.ttf">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/itcfranklingothicstd-book-webfont.woff">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/itcfranklingothicstd-demi-webfont.eot">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/itcfranklingothicstd-demi-webfont.svg">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/itcfranklingothicstd-demi-webfont.ttf">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/itcfranklingothicstd-demi-webfont.woff">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/jquery-ui-1.10.3.custom.css">
+      <publishTime>07/28/2013 21:50:49</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/jquery-ui-1.10.3.custom.min.css">
+      <publishTime>07/28/2013 21:50:49</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/jquery-ui-1.8.11.custom.css">
+      <publishTime>05/20/2013 01:34:54</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/jquery-ui-1.8.18.custom.css">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/jquery.autocomplete.css">
+      <publishTime>07/30/2013 13:15:27</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/jquery.datepick.css">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/jquery.ui.base.css">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/jquery.ui.core.css">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/jquery.ui.dialog.css">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/jquery.ui.theme.css">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/jquery.weekcalendar.css">
+      <publishTime>05/20/2013 22:09:56</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/Main.css">
+      <publishTime>02/17/2014 23:07:35</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/redmond/images/ui-bg_flat_55_fbec88_40x100.png">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/redmond/images/ui-bg_glass_85_dfeffc_1x400.png">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/redmond/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/redmond/images/ui-bg_inset-hard_100_f5f8f9_1x100.png">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/redmond/images/ui-icons_217bc0_256x240.png">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/redmond/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/redmond/images/ui-icons_469bdd_256x240.png">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/redmond/images/ui-icons_6da8d5_256x240.png">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/redmond/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/redmond/images/ui-icons_d8e7f3_256x240.png">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/redmond/images/ui-icons_f9bd01_256x240.png">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="App_Themes/bdsu/redmond/jquery-ui-1.8.16.custom.css">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Default.skin">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/Default/flora.datepick.css">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/Default/humanity.datepick.css">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/bkgd.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/book.gif">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/book2.gif">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/certificate.gif">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/CornerLarge.gif">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/CornerLargeBlue.gif">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/CornerSmall.gif">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/d.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/demobutton.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/e.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/f.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/facebook.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/facebook.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/googleplus.jpg">
+      <publishTime>12/21/2012 11:08:16</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/homeimage.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/How_it_Works.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/linkedin.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/linkedin.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/logo.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/m.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/minus.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/ms.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/NARMScertifyU-Final.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/NARMScertifyU-Final.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/NARMScertifyU-Final3.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/NARMScertifyU-PayPal.gif">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/NARMScertifyU_logo.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/only15percourse.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/only_15_per_course.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/pagination.png">
+      <publishTime>06/01/2011 22:43:46</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/plus.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/powered by bdsmktg tag.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/poweredbybdsmktgtag.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/poweredbybdsmktgtag.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/r.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/spacer.gif">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/stackedBooks.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/tl.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/tt.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/twitter.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Images/twitter.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/Default/jquery-ui-1.8.18.custom.css">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/Default/jquery.autocomplete.css">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/Default/jquery.datepick.css">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/Default/jquery.ui.base.css">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/Default/jquery.ui.core.css">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/Default/jquery.ui.dialog.css">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/Default/jquery.ui.theme.css">
+      <publishTime>11/29/2012 15:20:08</publishTime>
+    </File>
+    <File Include="App_Themes/Default/Main.css">
+      <publishTime>12/06/2012 11:18:56</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Default.skin">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/bkgd.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/book.gif">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/book2.gif">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/certificate.gif">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/CornerLarge.gif">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/CornerLargeBlue.gif">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/CornerSmall.gif">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/d.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/delete.gif">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/demobutton.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/e.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/f.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/facebook.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/Hero-Image2.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/homeimage.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/How_it_Works.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/learn.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/linkedin.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/logo.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/m.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/minus.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/ms.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/NARMScertifyU-Final.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/NARMScertifyU-Final.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/NARMScertifyU-Final3.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/NARMScertifyU-PayPal.gif">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/NARMScertifyUCompanies.swf">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/NARMScertifyU_logo.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/only15percourse.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/only_15_per_course.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/pagination.png">
+      <publishTime>06/01/2011 22:43:46</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/plus.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/powered by bdsmktg tag.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/poweredbybdsmktgtag.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/r.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/stackedBooks.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/tl.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/tt.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/twitter.jpg">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/ui-icons_222222_256x240.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/ui-icons_2e83ff_256x240.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/ui-icons_454545_256x240.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/ui-icons_888888_256x240.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/jquery-ui-1.8.18.custom.css">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/jquery.autocomplete.css">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/jquery.datepick.css">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/jquery.ui.all.css">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/jquery.ui.base.css">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/jquery.ui.core.css">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/jquery.ui.dialog.css">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/jquery.ui.theme.css">
+      <publishTime>11/29/2012 15:20:09</publishTime>
+    </File>
+    <File Include="App_Themes/NCU/Main.css">
+      <publishTime>12/06/2012 11:18:50</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>07/13/2012 14:52:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>11/29/2012 15:20:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <publishTime>11/29/2012 15:20:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ObjectBuilder2.dll">
+      <publishTime>08/08/2012 16:54:49</publishTime>
+    </File>
+    <File Include="bin/MLMS.Common.dll">
+      <publishTime>11/21/2013 08:25:29</publishTime>
+    </File>
+    <File Include="bin/MLMS.Data.dll">
+      <publishTime>02/23/2014 23:45:48</publishTime>
+    </File>
+    <File Include="bin/MLMS.dll">
+      <publishTime>03/14/2014 00:27:45</publishTime>
+    </File>
+    <File Include="bin/MLMS.Objects.dll">
+      <publishTime>02/23/2014 23:45:48</publishTime>
+    </File>
+    <File Include="bin/MLMS.Service.dll">
+      <publishTime>02/23/2014 23:45:49</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>11/01/2013 01:11:38</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/01/2013 01:15:24</publishTime>
+    </File>
+    <File Include="MasterPage/Default.Master">
+      <publishTime>02/23/2014 22:33:14</publishTime>
+    </File>
+    <File Include="MasterPage/TemplateDefault.Master">
+      <publishTime>08/27/2013 20:28:00</publishTime>
+    </File>
+    <File Include="Public/PasswordRecovery.aspx">
+      <publishTime>11/01/2013 00:13:09</publishTime>
+    </File>
+    <File Include="Public/Register.aspx">
+      <publishTime>11/01/2013 19:29:22</publishTime>
+    </File>
+    <File Include="Scripts/Common.js">
+      <publishTime>02/23/2014 23:38:05</publishTime>
+    </File>
+    <File Include="Scripts/date.js">
+      <publishTime>05/20/2013 01:34:54</publishTime>
+    </File>
+    <File Include="Scripts/DateTimePicker.js">
+      <publishTime>07/28/2013 12:24:25</publishTime>
+    </File>
+    <File Include="Scripts/fullcalendar.js">
+      <publishTime>02/17/2014 19:56:32</publishTime>
+    </File>
+    <File Include="Scripts/fullcalendar.min.js">
+      <publishTime>05/19/2013 23:59:48</publishTime>
+    </File>
+    <File Include="Scripts/fullcalendar.viewmore.js">
+      <publishTime>02/17/2014 19:15:56</publishTime>
+    </File>
+    <File Include="Scripts/gcal.js">
+      <publishTime>05/19/2013 23:59:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.intellisense.js">
+      <publishTime>02/06/2013 18:26:33</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.js">
+      <publishTime>11/29/2012 15:20:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.min.js">
+      <publishTime>11/29/2012 15:20:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.js">
+      <publishTime>07/30/2013 00:42:50</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.js">
+      <publishTime>05/19/2013 23:59:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.10.2.custom.min.js">
+      <publishTime>05/19/2013 23:59:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.10.3.custom.js">
+      <publishTime>07/28/2013 21:47:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.10.3.custom.min.js">
+      <publishTime>07/28/2013 21:47:28</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.11.custom.min.js">
+      <publishTime>05/20/2013 01:34:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.16.custom.min.js">
+      <publishTime>03/28/2013 23:03:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.18.custom.min.js">
+      <publishTime>11/29/2012 15:20:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui.custom.js">
+      <publishTime>07/30/2013 00:19:50</publishTime>
+    </File>
+    <File Include="Scripts/jquery.autocomplete.js">
+      <publishTime>07/30/2013 01:11:57</publishTime>
+    </File>
+    <File Include="Scripts/jquery.datepick.js">
+      <publishTime>11/29/2012 15:20:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery.formbubble.js">
+      <publishTime>02/17/2014 19:55:33</publishTime>
+    </File>
+    <File Include="Scripts/jquery.jqpagination.js">
+      <publishTime>01/03/2014 23:21:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.js">
+      <publishTime>02/17/2014 20:24:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui.autocomplete.js">
+      <publishTime>07/30/2013 00:44:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui.core.js">
+      <publishTime>07/30/2013 01:30:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui.dialog.js">
+      <publishTime>11/29/2012 15:20:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui.draggable.js">
+      <publishTime>11/29/2012 15:20:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui.menu.js">
+      <publishTime>07/30/2013 00:44:30</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui.mouse.js">
+      <publishTime>11/29/2012 15:20:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui.position.js">
+      <publishTime>11/29/2012 15:20:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui.resizable.js">
+      <publishTime>11/29/2012 15:20:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui.tabs.js">
+      <publishTime>01/16/2013 21:14:23</publishTime>
+    </File>
+    <File Include="Scripts/jquery.ui.widget.js">
+      <publishTime>07/30/2013 01:31:20</publishTime>
+    </File>
+    <File Include="Services/CalendarWebService.asmx">
+      <publishTime>01/17/2014 20:03:19</publishTime>
+    </File>
+    <File Include="Services/MemberWebService.asmx">
+      <publishTime>01/17/2014 20:03:20</publishTime>
+    </File>
+    <File Include="Services/UserService.asmx">
+      <publishTime>01/16/2013 17:36:37</publishTime>
+    </File>
+    <File Include="User/Admin.aspx">
+      <publishTime>02/17/2014 23:07:02</publishTime>
+    </File>
+    <File Include="User/Calendar.aspx">
+      <publishTime>03/12/2014 23:20:30</publishTime>
+    </File>
+    <File Include="User/CalendarHandler.ashx">
+      <publishTime>07/25/2013 23:57:47</publishTime>
+    </File>
+    <File Include="User/CalendarWebService.asmx">
+      <publishTime>07/26/2013 00:32:15</publishTime>
+    </File>
+    <File Include="User/EditProfile.aspx">
+      <publishTime>02/07/2013 12:57:02</publishTime>
+    </File>
+    <File Include="User/LeadManagement.aspx">
+      <publishTime>02/25/2013 23:34:28</publishTime>
+    </File>
+    <File Include="User/Leads.aspx">
+      <publishTime>03/14/2014 00:26:48</publishTime>
+    </File>
+    <File Include="User/LeadSearchHandler.ashx">
+      <publishTime>08/18/2013 23:12:02</publishTime>
+    </File>
+    <File Include="User/MemberFilterHandler.ashx">
+      <publishTime>07/29/2013 21:04:02</publishTime>
+    </File>
+    <File Include="User/Members.aspx">
+      <publishTime>03/14/2014 00:22:05</publishTime>
+    </File>
+    <File Include="User/MemberWebService.asmx">
+      <publishTime>10/10/2013 21:16:50</publishTime>
+    </File>
+    <File Include="User/Search.aspx">
+      <publishTime>02/17/2014 22:49:42</publishTime>
+    </File>
+    <File Include="User/UserWebService.asmx">
+      <publishTime>01/03/2014 23:20:35</publishTime>
+    </File>
+    <File Include="UserControls/CallHistory.ascx">
+      <publishTime>02/14/2014 00:12:23</publishTime>
+    </File>
+    <File Include="UserControls/LeadManagement.ascx">
+      <publishTime>03/28/2013 01:37:40</publishTime>
+    </File>
+    <File Include="UserControls/LoginControl.ascx">
+      <publishTime>11/21/2013 08:09:16</publishTime>
+    </File>
+    <File Include="UserControls/UserControlBase.ascx">
+      <publishTime>02/07/2013 12:58:10</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/14/2014 00:27:49</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPage/Default.Master" CodeBehind="TemplateDefault.master.cs" Inherits="MLMS.MasterPage.TemplateDefault" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cphBody" runat="server">     
+        <div class="mainColumnLeft">
+                <asp:ContentPlaceHolder ID="cph1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+</asp:Content>

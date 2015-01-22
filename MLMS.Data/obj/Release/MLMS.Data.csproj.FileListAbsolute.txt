@@ -1,0 +1,12 @@
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Data\bin\Release\MLMS.Data.dll
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Data\bin\Release\MLMS.Data.pdb
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Data\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Data\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Data\bin\Release\MLMS.Common.dll
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Data\bin\Release\MLMS.Objects.dll
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Data\bin\Release\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Data\bin\Release\MLMS.Common.pdb
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Data\bin\Release\MLMS.Objects.pdb
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Data\obj\Release\MLMS.Data.csprojResolveAssemblyReference.cache
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Data\obj\Release\MLMS.Data.dll
+C:\Users\Matthew\Documents\Visual Studio 2012\Projects\MLMS\MLMS.Data\obj\Release\MLMS.Data.pdb
