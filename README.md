@@ -45,6 +45,3 @@ My linkedin profile is https://www.linkedin.com/in/matthewdwong
 The application URL is http://kpayongayong.com/MLMS
 The username and password you can use is mattdavidwong@gmail.com; password:12345a
 You can also register and create a new account.
-
-
-testing lgtm
